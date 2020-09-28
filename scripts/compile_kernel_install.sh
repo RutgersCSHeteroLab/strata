@@ -25,7 +25,7 @@ sudo apt-get install libdpkg-dev kernel-package
 
 export CONCURRENCY_LEVEL=$PARA
 touch REPORTING-BUGS
-sudo fakeroot make-kpkg -j$PARA --initrd kernel-image kernel-headers
+sudo fakeroot make-kpkg -j32 --initrd kernel-image kernel-headers
 sudo dpkg -i ../*image*.deb ../*header*.deb
 
 

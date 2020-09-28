@@ -11,7 +11,7 @@ cd kernel/linux-4.8.12
 sudo cp mlfs.config .config
 
 #Compile the kernel with '-j' (denotes parallelism) in sudo mode
-sudo make $PARA
+sudo make -j32
 sudo make modules
 sudo make modules_install
 sudo make install
